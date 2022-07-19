@@ -1,53 +1,56 @@
 
-# README Markdown Creator
+# README Markdown Generator
+[![Generic badge](https://img.shields.io/badge/License-MIT-<COLOR>.svg)](https://choosealicense.com/licenses/mit/)
 
 ## Description
 
-undefined
+The Motivation for this project was to spend less time writing future README.md files and more time working on the projects themselves. This Generator quickly creates a README markdown file that can be used for any and all future projects. During the development I learned how to use node and inquirer to take input from the user  through the command line and then use those inputs to create the README unique to their project. (This README.md was created using the Generator)
 
 ## Table of Contents 
 
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [frog](#frog)
-- [Features](#Features)
-- [Contributing](#Contributing)
-- [Tests](#Tests)
-- [Questions](#Questions)
+- [Installation](#installation})
+- [Usage](#usage})
+- [License](#license)
+- [Features](#features)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 
-In order to run this application you must simply run 'node index.js' in the terminal and then follow the on screen prompts to enter the required info
+In order to install, you must go to my Github (link below) and then pull the file to your local computer. Thats it.
 
-## Usage
+## [Usage](https://drive.google.com/file/d/1EStVQw3D2e-pQF9hatZE5sgx9B2GMr3h/view)
 
-To use this application just simply run 'node index.js' in your terminal while in the proper directory and then follow the onscreen prompts
+To use the program simply open up the directory in an integrated terminal and then run 'node index.js', then answer all of the prompts and your read me will be output in the file named 'Generated_README.md' Each time you run the application the file will be overwritten with your new README.md file. *Click the Usage link for A Video Demonstration*
 
 ![undefined](./assets/images/screenshot.png)
 
+## License
 
-## frog
-
-frog 
+[![Generic badge](https://img.shields.io/badge/License-MIT-<COLOR>.svg)](https://choosealicense.com/licenses/mit/)
 
 ## Features
 
-The README.md generator will prompt you for your inputs and then export them into a markdown file    
+Accept user inputs, Output proffesional README.md file, Create Badges with links to selected License description    
 
 ## Contributing
 
-If others would like to contribute please first pull the code from my github repository and then email me the changes you are proposing    
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+
+Feel free to contribute in any way you desire, this is open to anyone to explore and improve    
 
 ## Tests
 
-To test this application: try it out yourself and then feel free to contact me with any bugs    
+In order to test the application, pull the repo and start running the script, If you find any bugs in the code please feel frree to contact with suggestions    
 
 ## Questions
 
-With any Questions or Concerns please contact me at the Following addresses    
+Im happy to answer any Questions you may have, my preferred method is email (link below)    
 
 ## Contact Info
 
-Github: https://github.com/B-alt-del/README-markdown-creator
+![Generic badge](https://img.shields.io/badge/Email-Brad.schill.school@gmail.com-blue.svg)
 
-Email: bradschillschool@gmail.com
+[![Generic badge](https://img.shields.io/badge/Github-blue.svg)](https://github.com/B-alt-del/README-markdown-creator)
+

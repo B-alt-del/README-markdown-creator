@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./generateMarkdown');
 
 const questions = [
     {
@@ -9,8 +10,8 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Description',
-        name: '\n\nProvide a short description explaining the what, why, and how of your project.\n     - What was your motivation?\n     - Why did you build this project?\n     - What problem does it solve?\n     - What did you learn?\n\n'
+        name: 'Info',
+        message: '\n\nProvide a short description explaining the what, why, and how of your project.\n     - What was your motivation?\n     - Why did you build this project?\n     - What problem does it solve?\n     - What did you learn?\n\n'
     },
     {
         type: 'confirm',
@@ -86,7 +87,7 @@ const questions = [
         type: 'list',
         name: 'License',
         message: '\n\nChoose a license to add to your project from the following:',
-        choices: ['frog', 'time', 'lalapalooza'],
+        choices: ['GNU General Public License v3.0', 'Boost Software License 1.0','MIT License', 'The Unlicense', 'none'],
     },  
     {
         type: 'input',
@@ -107,77 +108,22 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Alt_text',
+        name: 'Alt_Text',
         message: '\n\nEnter the alternative text for the screenshot image\n\n',
     }
 ];
 
 
 function init() {
-    inquirer.prompt(questions).then(writeToFile)
+    inquirer.prompt(questions).then(generateMarkdown).then(writeToFile)
 }
 
 init()
 
 
-function writeToFile({Project_Title, Description, Table_selections, Table_inputs, License, Github, Email, Image_path, Alt_Text}) {
+function writeToFile(data) {
 
-    fs.writeFile('README.md', 
-`
-# ${Project_Title}
-
-## Description
-
-${Description}
-
-## Table of Contents 
-
-- [${Table_selections[0]}](#${Table_selections[0]})
-- [${Table_selections[1]}](#${Table_selections[1]})
-- [${License}](#${License})
-- [${Table_selections[2]}](#${Table_selections[2]})
-- [${Table_selections[3]}](#${Table_selections[3]})
-- [${Table_selections[4]}](#${Table_selections[4]})
-- [${Table_selections[5]}](#${Table_selections[5]})
-
-## ${Table_selections[0]}
-
-${Table_inputs[0]}
-
-## ${Table_selections[1]}
-
-${Table_inputs[1]}
-
-![${Alt_Text}](${Image_path})
-
-
-## ${License}
-
-${License} 
-
-## ${Table_selections[2]}
-
-${Table_inputs[2]}    
-
-## ${Table_selections[3]}
-
-${Table_inputs[3]}    
-
-## ${Table_selections[4]}
-
-${Table_inputs[4]}    
-
-## ${Table_selections[5]}
-
-${Table_inputs[5]}    
-
-## Contact Info
-
-Github: ${Github}
-
-Email: ${Email}
-`
-    , (err) => {
+    fs.writeFile('Generated_README.md', data, (err) => {
         if (err) {
             console.log(err)
         }
