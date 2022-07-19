@@ -24,7 +24,7 @@ In order to install, you must go to my Github (link below) and then pull the fil
 
 To use the program simply open up the directory in an integrated terminal and then run 'node index.js', then answer all of the prompts and your read me will be output in the file named 'Generated_README.md' Each time you run the application the file will be overwritten with your new README.md file. *Click the Usage link for A Video Demonstration*
 
-![undefined](./assets/images/screenshot.png)
+![Image of generator in action!](assets/images/screenshot.png)
 
 ## License
 
@@ -52,5 +52,5 @@ Im happy to answer any Questions you may have, my preferred method is email (lin
 
 ![Generic badge](https://img.shields.io/badge/Email-Brad.schill.school@gmail.com-blue.svg)
 
-[![Generic badge](https://img.shields.io/badge/Github-blue.svg)](https://github.com/B-alt-del/README-markdown-creator)
+[![Generic badge](https://img.shields.io/badge/Github-purple.svg)](https://github.com/B-alt-del/README-markdown-creator)
 

@@ -93,7 +93,7 @@ ${Table_inputs[5]}
 
 ![Generic badge](https://img.shields.io/badge/Email-${Email}-blue.svg)
 
-[![Generic badge](https://img.shields.io/badge/Github-blue.svg)](${Github})
+[![Generic badge](https://img.shields.io/badge/Github-purple.svg)](${Github})
 
 `
 }
