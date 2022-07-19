@@ -123,60 +123,60 @@ init()
 function writeToFile({Project_Title, Description, Table_selections, Table_inputs, License, Github, Email, Image_path, Alt_Text}) {
 
     fs.writeFile('README.md', 
-    `
-    # ${Project_Title}
+`
+# ${Project_Title}
 
-    ## Description
-    
-    ${Description}
-    
-    ## Table of Contents 
-    
-    - [${Table_selections[0]}](#${Table_selections[0]})
-    - [${Table_selections[1]}](#${Table_selections[1]})
-    - [${License}](#${License})
-    - [${Table_selections[2]}](#${Table_selections[2]})
-    - [${Table_selections[3]}](#${Table_selections[3]})
-    - [${Table_selections[4]}](#${Table_selections[4]})
-    - [${Table_selections[5]}](#${Table_selections[5]})
-    
-    ## ${Table_selections[0]}
-    
-    ${Table_inputs[0]}
-    
-    ## ${Table_selections[1]}
-    
-    ${Table_inputs[1]}
+## Description
 
-    ![${Alt_Text}](${Image_path})
-    
-    
-    ## ${License}
-    
-    ${License} 
+${Description}
 
-    ## ${Table_selections[2]}
-    
-    ${Table_inputs[2]}    
-    
-    ## ${Table_selections[3]}
-    
-    ${Table_inputs[3]}    
-    
-    ## ${Table_selections[4]}
-    
-    ${Table_inputs[4]}    
-    
-    ## ${Table_selections[5]}
-    
-    ${Table_inputs[5]}    
-    
-    ## Contact Info
+## Table of Contents 
 
-    Github: ${Github}
+- [${Table_selections[0]}](#${Table_selections[0]})
+- [${Table_selections[1]}](#${Table_selections[1]})
+- [${License}](#${License})
+- [${Table_selections[2]}](#${Table_selections[2]})
+- [${Table_selections[3]}](#${Table_selections[3]})
+- [${Table_selections[4]}](#${Table_selections[4]})
+- [${Table_selections[5]}](#${Table_selections[5]})
 
-    Email: ${Email}
-    `
+## ${Table_selections[0]}
+
+${Table_inputs[0]}
+
+## ${Table_selections[1]}
+
+${Table_inputs[1]}
+
+![${Alt_Text}](${Image_path})
+
+
+## ${License}
+
+${License} 
+
+## ${Table_selections[2]}
+
+${Table_inputs[2]}    
+
+## ${Table_selections[3]}
+
+${Table_inputs[3]}    
+
+## ${Table_selections[4]}
+
+${Table_inputs[4]}    
+
+## ${Table_selections[5]}
+
+${Table_inputs[5]}    
+
+## Contact Info
+
+Github: ${Github}
+
+Email: ${Email}
+`
     , (err) => {
         if (err) {
             console.log(err)
