@@ -24,7 +24,7 @@ In order to install, you must go to my Github (link below) and then pull the fil
 
 To use the program simply open up the directory in an integrated terminal and then run 'node index.js', then answer all of the prompts and your read me will be output in the file named 'Generated_README.md' Each time you run the application the file will be overwritten with your new README.md file. *Click the Usage link for A Video Demonstration*
 
-![Image of generator in action!](assets/images/screenshot.png)
+![Image of Generator in Action!](./assets/images/screenshot.PNG)
 
 ## License
 

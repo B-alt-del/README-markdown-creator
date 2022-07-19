@@ -26,7 +26,7 @@ In order to install the project you must first have node installed on your deskt
 
 To use the program you simply run it it and then follow the prompts, type in the info you would like in each section and then press enter, The new README.md will be stored as GeneratedREADME.md
 
-![Image of Generator in Action!](assets/images/screenshot.png)
+![Image of Generator in Action!](./assets/images/screenshot.PNG)
 
 ## License
 
